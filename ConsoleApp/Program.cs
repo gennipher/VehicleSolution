@@ -46,24 +46,32 @@ namespace ConsoleApp
             //           -=\c`""""""" "`)
             //              `~~~~~/ / ~~`
             //                -==/ /
-            
+
 
             AirPlane boeing747;
             boeing747 = new AirPlane();
 
-            for (int i = 9; i > 0; i++)
-            {
-                boeing747.GoUp(100);
-                Console.WriteLine("Altura: " + boeing747 + "m");
-            }
+            boeing747.SpeedUp(100);
+            boeing747.SpeedUp(100);
+            boeing747.SpeedUp(100);
+            boeing747.SpeedUp(100);
+            boeing747.SpeedUp(100);
 
-            for (int i=0; i<9; i++)
+            boeing747.GoUp(100);
+            boeing747.GoUp(100);
+            boeing747.GoUp(100);
+            boeing747.GoUp(100);
+            boeing747.GoUp(100);
+            boeing747.GoUp(200);
+            boeing747.GoUp(200);
+
+            for (int i = 0; i < 9; i++)
             {
                 boeing747.GoDown(100);
-                Console.WriteLine("Altura: " + boeing747 + "m");
+                Console.WriteLine("Altura: " + boeing747.CurrentHeight + "m");
             }
             // ####################################################
-            
+
 
 
         }
